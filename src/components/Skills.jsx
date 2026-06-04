@@ -1,7 +1,7 @@
 function Skills() {
     return <>
         <h3 className='text-lg font-bold mb-2'>My Skills</h3>
-        <div className="grid grid-cols-3 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-y-3 md:gap-y-0 mb-4">
             <section className="p-4 bg-neutral-900 border-2 border-neutral-950 rounded-2xl align-middle">
                 <p className="font-bold">Front-end</p>
                 <ul className="ml-6 list-[square]">
