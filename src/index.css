@@ -34,4 +34,6 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+
+  scrollbar-color: var(--color-vividviolet) var(--color-vividviolet-950);
 }
