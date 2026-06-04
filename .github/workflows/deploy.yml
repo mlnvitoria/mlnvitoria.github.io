@@ -9,6 +9,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    permissions: 
+      contents: write
+
     steps:
       # Step 1: Checkout the repository
       - name: Checkout Repository
@@ -29,6 +32,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # FIX: Force Git to inject the automatic token for HTTPS authentication
+      - name: Configure Git Authentication
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
 
       # Step 5: Build the React app
       - name: Build React App
