@@ -10,5 +10,5 @@ export default defineConfig({
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: '/mlnvitoria.github.io',
+  base: '/mlnvitoria.github.io/',
 })
