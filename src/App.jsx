@@ -9,7 +9,7 @@ import SocialLinks from './components/SocialLinks'
 function App() {
   return (
     <>
-      <div className="divide-y-2 divide-vividviolet-200 text-neutral-900 dark:text-neutral-300 bg-vividviolet-950">
+      <div className="divide-y-2 divide-vividviolet-200 text-neutral-300 bg-vividviolet-950">
         <section id="home" className="px-5 py-20 md:px-20 md:py-40 relative w-full overflow-hidden flex justify-center border-b-2 margin-b-5">
           <video autoPlay muted loop playsInline id="bg-video" poster={techBgFallback} className="absolute top-0 left-0 w-full h-full object-cover z-1">
             <source src={techBg} type="video/mp4" />
