@@ -22,8 +22,8 @@ function App() {
             <div className="px-4 pt-8 pb-15 inline-grid grid-cols-1 md:grid-cols-3 md:gap-10 bg-linear-to-b from-vividviolet-800 to-transparent max-w-4xl">
               <img src={viPhoto} className="shadow-xl/60 border-2 rounded-[50%] object-cover" alt="Vitoria's Photo. She is a latina women, brown wavy hair, wearing a black t-shirt. She's smiling to the photo." />
               <div className="col-span-2 grid align-middle my-5">
-                <p>Enchantée, Vitoria!</p>
-                <p className='text-justify'>I'm a Software Developer with professional experience in PHP, JavaScript, and full-stack solutions, currently focused on learning React, TypeScript, and modern applications.</p>
+                <p>Good to see you here, I'm Vitoria!</p>
+                <p className='text-justify'>I am a Software Developer with professional experience in PHP, JavaScript, and full-stack solutions, currently focused on learning React, TypeScript, and modern applications.</p>
                 <SocialLinks />
               </div>
             </div>
@@ -37,14 +37,22 @@ function App() {
         <section id="projects" className="p-4 lg:m-8">
           <Projects />
         </section>
-        <section id="contact" className="p-4 lg:m-8">
+        <section id="contact" className="p-4 lg:mx-8 lg:mt-8">
           <h2 className='text-2xl font-bold'>Contact</h2>
+          <p>I'm currently open to new job opportunities for Software Development Full-Stack, Front-end or Back-end!</p>
+          <p>Would you like to talk to me? You can:</p>
+          <ul className='list-[square] ms-4'>
+            <li key="contact01">Send me an <a href='mailto:vitoriamendes95@pm.me' className='text-bold underline underline-offset-8 hover:bg-zinc-600'>e-mail</a></li>
+            <li key="contact02">Send me a message at <a href='https://www.linkedin.com/in/mlnvitoria' className='text-bold underline underline-offset-8 hover:bg-blue-500'>LinkedIn</a></li>
+          </ul>
         </section>
-        <section id="footer">
+        <section id="footer" className="p-4 lg:mx-8">
           <div className="credits">
-            <p>Background video made by Chandresh Uike</p>
-            <p>Background fallback photo by Asih Wahyuni</p>
-            <p><a href="https://www.vecteezy.com/free-videos/code">Code Stock Videos by Vecteezy</a></p>
+            <p className='font-bold'>Credits</p>
+            <p>Code by Vitoria Mendes</p>
+            <p className='text-xs'>Background video made by Chandresh Uike</p>
+            <p className='text-xs'>Background fallback photo by AI</p>
+            <p className='text-xs'>Both background media were achieved at <a href="https://www.vecteezy.com/free-videos/code">Vecteezy</a></p>
           </div>
         </section>
       </div>
